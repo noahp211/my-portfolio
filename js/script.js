@@ -1,7 +1,9 @@
+console.log("JavaScript is linked successfully!");
 
-console.log("JavaScript file is linked!");
+const infobtns = document.querySelectorAll(".description");
 
-const infoButtons = document.querySelectorAll(".description");
-
-
-console.log("Info buttons selected:", infoButtons);
+infobtns.forEach(btn => {
+  btn.addEventListener("click", function () {
+    console.log("Button clicked:", this);
+  });
+});
