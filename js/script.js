@@ -1,9 +1,11 @@
-console.log("JavaScript is linked successfully!");
+const btns = document.querySelectorAll(".description");
 
-const infobtns = document.querySelectorAll(".description");
+for (let i = 0; i < btns.length; i++) { let btn = btns[i];
 
-infobtns.forEach(btn => {
-  btn.addEventListener("click", function () {
-    console.log("Button clicked:", this);
+  btn.addEventListener("click", function () { let details = btn.nextElementSibling;
+
+    if (details.style.display === "none" || details.style.display === "") { details.style.display = "block";
+      btn.textContent = "Hide Details";
+    } else { details.style.display = "none"; btn.textContent = "See More"; }
   });
-});
+}
