@@ -25,3 +25,23 @@ for(let i=0;i<navLinks.length;i++){
   });
 }
 
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.project');
+
+filterBtns.forEach(function(btn){
+  btn.addEventListener('click', function(){
+    const filter = btn.getAttribute('data-filter');
+
+    projects.forEach(function(proj){
+      const categories = proj.getAttribute('data-category');
+
+      if (filter === 'all' || categories.includes(filter)) {
+        proj.style.display = 'block';
+      } else {
+        proj.style.display = 'none';
+      }
+    });
+  });
+});
+
+

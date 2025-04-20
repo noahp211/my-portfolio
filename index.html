@@ -19,45 +19,34 @@
     </ul>
   </nav>
   <button id="darkModeToggle">Toggle Dark Mode</button>
-
 </header>
 
 <!-- About Section -->
 <section id="about">
+</section>
 
+<!-- My Work Section -->
+<section id="my-work">
+  <h2>Recent Work</h2>
 
-  <section id="my-work">
-    <h2>Recent Work</h2>
+  <!-- FILTER BUTTONS (added cleanly) -->
+  <div id="filters" style="text-align: center; margin-bottom: 20px;">
+    <button class="filter-btn" data-filter="all">Al</button>
+    <button class="filter-btn" data-filter="api">API projects</button>
+    <button class="filter-btn" data-filter="javascript">Javascript Project</button>
+  </div>
 
-    <div class="project">
-      <h3>Web Calculator</h3>
-      <button class="description">More Info</button>
-      <p class="project-details" style="display: none;">A simple calculator that can perform algebra, build using HTML, CSS and Javascript.</p>
-    </div>
+  <!-- Projects Start Here -->
+  <div class="project" data-category="javascript">
+    <h3>Web Calculator</h3>
+    <button class="description">More Info</button>
+    <p class="project-details" style="display: none;">A simple calculator that can perform algebra, built using HTML, CSS, and JavaScript.</p>
+  </div>
 
-    <div class="project">
-      <h3>Personal Website</h3>
-      <button class="description">More Info</button>
-      <p class="project-details" style="display: none;">A personal website to recreate an event and their guest speakers, Built using HTML and CSS</p>
-    </div>
+  <div class="project" data-category="javascript">
+    <h3>Personal Website</h3>
+    <button class="description">More Info</button>
+    <p class="project-details" style="display: none;">A personal website to recreate an event and their guest speakers, built using HTML and CSS.</p>
+  </div>
 
-    <div class="project">
-      <h3>Humber JavaScript Web Project</h3>
-      <button class="description">More Info</button>
-      <p class="project-details" style="display: none;">
-        A full web project built at Humber College using JavaScript, HTML, and CSS. The site featured interactive API calls, embedded slideshows, and real-time content updates. We practiced using Git throughout — including branching, merging, pull requests, and resolving conflicts as a team.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Live Weather App</h3>
-      <button class="description">More Info</button>
-      <p class="project-details" style="display: none;">
-        A weather app that uses a public API to automatically detect the user's location and display current weather conditions. This project focused on working with asynchronous JavaScript and basic geolocation to enhance user experience.
-      </p>
-    </div>
-
-
-
-  </section>
-
+  <div class="project"
