@@ -1,0 +1,5 @@
+- add about section about me
+- add in my projects
+- contact me section
+- possibly dark mode, smoother scrolling or project filtering
+- Minify CSS/JS
