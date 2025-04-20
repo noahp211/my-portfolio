@@ -9,3 +9,10 @@ for (let i = 0; i < btns.length; i++) { let btn = btns[i];
     } else { details.style.display = "none"; btn.textContent = "See More"; }
   });
 }
+
+const darkModeBtn = document.getElementById('darkModeToggle');
+
+darkModeBtn.addEventListener('click', function(){
+  document.body.classList.toggle('dark-mode');
+});
+
