@@ -85,5 +85,11 @@ h2 {
   background-color: #333;
 }
 
+.project:hover{
+  transform: scale(1.04);
+  transition: transform 0.2s;
+}
+
+
 
 
